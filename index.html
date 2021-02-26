@@ -5,58 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Веб Студия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <a href=""><span>Web</span>Studio</a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Студия</a>
+    <header class="header">
+        <a  class="logo link logo-two-part" href=""><span class="logo-first-part">Web</span>Studio</a>
+            <nav class="nav">
+                <ul class="nav-list list">
+                    <li class="nav-item">
+                        <a class="link nav-link" href="">Студия</a>
                     </li> 
-                    <li>
-                        <a href="">Портфолио</a>
+                    <li class="nav-list-item">
+                        <a class="link nav-link" href="">Портфолио</a>
                     </li>
-                    <li>
-                        <a href="">Контакты</a>
+                    <li class="nav-list-item">
+                        <a class="link nav-link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <ul>
-                <li>
-                    <a href="mailto:info@dewstudio.com">info@dewstudio.com</a>
+            <ul class="list communication-list">
+                <li class="commuication-item">
+                    <a  class="link mail-link" href="mailto:info@dewstudio.com">info@dewstudio.com</a>
                 </li> 
-                <li> 
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="commuication-item"> 
+                    <a  class="link tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
     </header>
 
     <main>
         <!-- HERO -->
-        <section>
-            <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button">Заказать услугу</button>
+        <section class="hero">
+            <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+            <button class="modal-btn" type="button">Заказать услугу</button>
         </section>
-        <section>
-            <!-- WHY CHOOSE US -->
+        
+        <!-- WHY CHOOSE US -->
+        <section class="advantages">
             <h2 hidden>Наши преимущества</h2>
-            <ul>
-                <li>
-                    <h3>Внимание к деталям</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <ul class="list advantages-list">
+                <li class="adventages-item">
+                    <h3 class="benefit-name">Внимание к деталям</h3>
+                    <p class="advantages-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
-                    <h3>Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <li class="adventages-item">
+                    <h3 class="benefit-name">Пунктуальность</h3>
+                    <p class="advantages-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
-                    <h3>Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <li class="adventages-item">
+                    <h3 class="benefit-name">Планирование</h3>
+                    <p class="advantages-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
-                    <h3>Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <li class="adventages-item">
+                    <h3 class="benefit-name">Современные технологии</h3>
+                    <p class="advantages-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
         </section>
@@ -64,7 +73,7 @@
         <!--WHAT ARE WE DOING-->
         <section>
             <h2>Чем мы занимаемся</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./images/what_are_we_doing/box-1.jpg" alt="Разработка сайтов" width="370" height="266"> 
                 </li>
@@ -80,7 +89,7 @@
         <!--OUR TEAM-->
         <section>
             <h2>Наша команда</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="./images/our_team/igor.jpg" alt="Портрет Игоря Демьяненко" width="270" height="265">
                     <h3>Игорь Демьяненко</h3>
@@ -103,22 +112,22 @@
                 </li>
             </ul>
         </section>
-    </main>
+    </main>     
 
     <footer>
         <section>
-            <a href=""><span>Web</span>Studio</a>
+            <a  class="link" href=""><span>Web</span>Studio</a>
         <!--CONTACT INFORMATION-->         
-            <address>
-                <ul>
+            <address class="address">
+                <ul class="list">
                     <li>
-                        <a href="https://goo.gl/maps/hcSzEZoFeTUnPmFg6" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                        <a  class="link" href="https://goo.gl/maps/hcSzEZoFeTUnPmFg6" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
                     <li>
-                        <a href="mailto:info@dewstudio.com">info@dewstudio.com</a>
+                        <a  class="link" href="mailto:info@dewstudio.com">info@dewstudio.com</a>
                     </li>
                     <li>
-                        <a href="tel:+380961111111">+38 096 111 11 11</a>
+                        <a  class="link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>
