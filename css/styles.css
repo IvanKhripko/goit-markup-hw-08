@@ -11,6 +11,7 @@
 
 body {
   font-family: var(--main-font);
+  font-weight: var(--font-weight-text-site);
   color: var(--text-color-site);
 }
 .link {
@@ -46,34 +47,7 @@ body {
   color: #fff;
 }
 
-.title {
-  font-family: var(--main-font);
-  font-weight: var(--font-weight-text-title);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-/*=== END COMPONENTS ===*/
-
-/*=== HEADER ===*/
-.nav-link {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color-title);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-
 .mail-link {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -82,7 +56,6 @@ body {
 }
 
 .tel-link {
-  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -99,6 +72,31 @@ body {
 .tel-link:focus {
   color: var(--accent-color);
 }
+
+.title {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-text-title);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/*=== END COMPONENTS ===*/
+
+/*=== HEADER ===*/
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-title);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
 /*=== END HEADER ===*/
 
 /*=== HERO ===*/
@@ -107,7 +105,6 @@ body {
 }
 
 .hero-title {
-  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -118,7 +115,6 @@ body {
 }
 
 .modal-btn {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -135,17 +131,7 @@ body {
 /*=== END HERO ===*/
 
 /*=== WHY CHOOSE US SECTION ===*/
-.advantages {
-}
-
-.advantages-list {
-}
-
-.adventages-item {
-}
-
 .benefit-name {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -155,22 +141,48 @@ body {
 }
 
 .advantages-description {
-  font-family: var(--main-font);
-  font-weight: var(--font-weight-text-site);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-
 /*=== END WHY CHOOSE US SECTION ===*/
 
-/*=== WHAT ARE WE DOING SECTION ===*/
-.service-list {
+/*=== OUR TEAM SECTION ===*/
+.team {
+  background-color: #f5f4fa;
 }
 
-.service-list-item {
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color-title);
 }
 
-.service-list-img {
+.position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-/*=== END WHAT ARE WE DOING SECTION ===*/
+/*=== END OUR TEAM SECTION ===*/
+
+/*=== FOOTER SECTION ===*/
+.footer {
+  background-color: var(--backgrund-hero-footer);
+}
+
+.link-adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.link-adress:hover,
+.link-adress:focus {
+  color: var(--accent-color);
+}
+/*=== AND FOOTER SECTION ===*/
