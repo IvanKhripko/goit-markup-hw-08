@@ -1,3 +1,18 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --text-color-site: #757575;
+  --text-color-title: #212121;
+  --backgrund-hero-footer: #2f303a;
+  --font-weight-text-site: 400;
+  --font-weight-text-title: 700;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--text-color-site);
+}
 .link {
   text-decoration: none;
 }
@@ -10,115 +25,116 @@
   font-style: normal;
 }
 
-.logo-first-part {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700s;
-  font-size: 26px;
-  line-height: 1.19;
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
-
-  color: #2196f3;
-}
-
-.logo-two-part {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
+/*=== COMPONENTS ===*/
+.logo {
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
-
   letter-spacing: 0.03em;
-
-  color: black;
 }
+
+.logo-first-part {
+  color: var(--accent-color);
+}
+
+.logo-white-theme {
+  color: #000;
+}
+
+.logo-dark-theme {
+  color: #fff;
+}
+
+.title {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-text-title);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/*=== END COMPONENTS ===*/
+
+/*=== HEADER ===*/
 .nav-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--text-color-title);
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .mail-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color-site);
 }
 
 .tel-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color-site);
 }
 
 .mail-link:hover,
 .mail-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .tel-link:hover,
 .tel-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
+/*=== END HEADER ===*/
 
+/*=== HERO ===*/
 .hero {
-  background: #2f303a;
+  background: var(--backgrund-hero-footer);
 }
 
 .hero-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: #ffffff;
 }
 
 .modal-btn {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-family: var(--main-font);
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
-  /* identical to box height, or 187% */
-
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   color: #ffffff;
 }
+/*=== END HERO ===*/
 
+/*=== WHY CHOOSE US SECTION ===*/
 .advantages {
 }
 
@@ -129,26 +145,32 @@
 }
 
 .benefit-name {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-family: var(--main-font);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: #212121;
+  color: var(--text-color-title);
 }
 
 .advantages-description {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-text-site);
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
-
   letter-spacing: 0.03em;
-
-  color: #757575;
 }
+
+/*=== END WHY CHOOSE US SECTION ===*/
+
+/*=== WHAT ARE WE DOING SECTION ===*/
+.service-list {
+}
+
+.service-list-item {
+}
+
+.service-list-img {
+}
+/*=== END WHAT ARE WE DOING SECTION ===*/
