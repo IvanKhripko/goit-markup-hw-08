@@ -7,6 +7,7 @@
   --backgrund-hero-footer: #2f303a;
   --font-weight-text-site: 400;
   --font-weight-text-title: 700;
+  --font-weight-text: 500;
 }
 
 body {
@@ -86,7 +87,7 @@ body {
 
 /*=== HEADER ===*/
 .nav-link {
-  font-weight: 500;
+  font-weight: var(--font-weight-text);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -154,7 +155,7 @@ body {
 }
 
 .name {
-  font-weight: 500;
+  font-weight: var(--font-weight-text);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -187,3 +188,38 @@ body {
   color: var(--accent-color);
 }
 /*=== AND FOOTER SECTION ===*/
+
+/*=== PORTFOLIO ===*/
+/*==== FILTERS LIST ====*/
+.filter-btn {
+  font-family: inherit;
+  font-weight: var(--font-weight-text);
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  display: flex;
+  color: var(--text-color-title);
+  background: #f5f4fa;
+  border-radius: 4px;
+  border-width: 0;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+/*==== AND FILTERS LIST ====*/
+
+/*==== PROJECTS LIST ====*/
+.name-project-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-color-title);
+}
+/*==== END PROJECTS LIST ====*/
+/*=== END PORTFOLIO ===*/
