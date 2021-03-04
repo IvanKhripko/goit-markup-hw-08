@@ -4,6 +4,8 @@
   --accent-color: #2196f3;
   --text-color-site: #757575;
   --text-color-title: #212121;
+  --dark-color-theme: #000;
+  --white-color-theme: #fff;
   --backgrund-hero-footer: #2f303a;
   --font-weight-text-site: 400;
   --font-weight-text-title: 700;
@@ -41,11 +43,11 @@ body {
 }
 
 .logo-white-theme {
-  color: #000;
+  color: var(--dark-color-theme);
 }
 
 .logo-dark-theme {
-  color: #fff;
+  color: var(--white-color-theme);
 }
 
 .mail-link {
@@ -81,7 +83,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--text-color-title);
 }
 /*=== END COMPONENTS ===*/
 
@@ -98,6 +100,10 @@ body {
 .nav-link:focus {
   color: var(--accent-color);
 }
+
+.link-studio {
+  color: var(--accent-color);
+}
 /*=== END HEADER ===*/
 
 /*=== HERO ===*/
@@ -112,7 +118,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color-theme);
 }
 
 .modal-btn {
@@ -128,7 +134,7 @@ body {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--white-color-theme);
 }
 /*=== END HERO ===*/
 
@@ -180,7 +186,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color-theme);
 }
 
 .link-adress:hover,
@@ -209,7 +215,7 @@ body {
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--white-color-theme);
 }
 /*==== AND FILTERS LIST ====*/
 
@@ -220,6 +226,10 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color-title);
+}
+
+.link-portfolio {
+  color: var(--accent-color);
 }
 /*==== END PROJECTS LIST ====*/
 /*=== END PORTFOLIO ===*/
