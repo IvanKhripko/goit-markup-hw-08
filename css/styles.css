@@ -17,6 +17,27 @@ body {
   font-weight: var(--font-weight-text-site);
   color: var(--text-color-site);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
@@ -175,6 +196,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 /*=== END OUR TEAM SECTION ===*/
 
 /*=== FOOTER SECTION ===*/
@@ -232,4 +254,23 @@ body {
   color: var(--accent-color);
 }
 /*==== END PROJECTS LIST ====*/
+/*===FORMATTING BLOKS AND LINES===*/
+.projects-border {
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
 /*=== END PORTFOLIO ===*/
+
+/*=== EXAMPLE 
+.wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 700px;
+  min-width: 400px;
+  margin: 0 auto;
+  outline: 1px solid #000;
+}===*/
