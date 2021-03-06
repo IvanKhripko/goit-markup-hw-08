@@ -50,6 +50,16 @@ img {
   font-style: normal;
 }
 
+.visualy-hiden {
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /*=== COMPONENTS ===*/
 .logo {
   font-family: var(--secondary-font);
@@ -57,6 +67,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
 
 .logo-first-part {
@@ -77,6 +88,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color-site);
+  margin-right: 25px;
 }
 
 .tel-link {
@@ -109,6 +121,36 @@ img {
 /*=== END COMPONENTS ===*/
 
 /*=== HEADER ===*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.communication-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .nav-link {
   font-weight: var(--font-weight-text);
   font-size: 14px;
@@ -125,11 +167,24 @@ img {
 .link-studio {
   color: var(--accent-color);
 }
+
 /*=== END HEADER ===*/
 
 /*=== HERO ===*/
-.hero {
+.container-hero {
   background: var(--backgrund-hero-footer);
+  width: 1600px;
+  height: 600px;
+  top: 80px;
+}
+
+.hero {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
 }
 
 .hero-title {
@@ -141,6 +196,13 @@ img {
   text-transform: uppercase;
   color: var(--white-color-theme);
 }
+
+/*.hero-title-position {
+  width: 696px;
+  height: 120px;
+  padding-top: 200px;
+  padding-left: 252px;
+}*/
 
 .modal-btn {
   font-family: inherit;
