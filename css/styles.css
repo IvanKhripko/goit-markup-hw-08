@@ -117,7 +117,9 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-title);
+  margin-bottom: 50px;
 }
+
 /*=== END COMPONENTS ===*/
 
 /*=== HEADER ===*/
@@ -171,20 +173,13 @@ img {
 /*=== END HEADER ===*/
 
 /*=== HERO ===*/
-.container-hero {
+.hero {
   background: var(--backgrund-hero-footer);
-  width: 1600px;
-  height: 600px;
-  top: 80px;
 }
 
-.hero {
-  width: 1200px;
-  height: 600px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  align-items: center;
+.container-hero {
+  padding: 200px 252px;
+  text-align: center;
 }
 
 .hero-title {
@@ -195,33 +190,35 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color-theme);
+  margin-bottom: 30px;
 }
 
-/*.hero-title-position {
-  width: 696px;
-  height: 120px;
-  padding-top: 200px;
-  padding-left: 252px;
-}*/
-
 .modal-btn {
+  min-width: 200px;
+  padding: 10px 32px;
+  border: 1px solid var(--text-color-site);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   cursor: pointer;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  color: var(--white-color-theme);
+  display: flex;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--white-color-theme);
+  margin: 0 auto;
 }
 /*=== END HERO ===*/
 
 /*=== WHY CHOOSE US SECTION ===*/
+.advantages-list {
+  padding: 94px 0px;
+}
+
 .benefit-name {
   font-weight: 700;
   font-size: 14px;
@@ -229,6 +226,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-title);
+  margin-bottom: 10px;
+  width: 270px;
 }
 
 .advantages-description {
@@ -236,11 +235,58 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+.advantages-list {
+  display: flex;
+}
+
+.adventages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /*=== END WHY CHOOSE US SECTION ===*/
+
+/*=== WHAT ARE WE DOING SECTION ===*/
+.service {
+  margin-bottom: 94px;
+}
+
+.service-list {
+  display: flex;
+}
+
+.service-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+/*=== END WHAT ARE WE DOING SECTION ===*/
 
 /*=== OUR TEAM SECTION ===*/
 .team {
   background-color: #f5f4fa;
+}
+
+.team .title {
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+  padding-bottom: 94px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.team-list-content-wraper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .name {
@@ -250,6 +296,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-title);
+  margin-bottom: 10px;
 }
 
 .position {
@@ -262,8 +309,23 @@ img {
 /*=== END OUR TEAM SECTION ===*/
 
 /*=== FOOTER SECTION ===*/
+
 .footer {
   background-color: var(--backgrund-hero-footer);
+}
+
+.footer-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: left;
+}
+
+.footer-list {
+  margin-top: 20px;
+}
+
+.footer-link-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .link-adress {
