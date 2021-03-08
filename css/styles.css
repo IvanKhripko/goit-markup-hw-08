@@ -141,7 +141,7 @@ img {
 }
 
 .nav-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .communication-list {
@@ -175,7 +175,7 @@ img {
 }
 
 .container-hero {
-  padding: 200px 252px;
+  padding: 200px 0px;
   text-align: center;
 }
 
@@ -187,7 +187,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color-theme);
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto 30px;
 }
 
 .modal-btn {
@@ -212,10 +213,13 @@ img {
 /*=== END HERO ===*/
 
 /*=== WHY CHOOSE US SECTION ===*/
+.advantages {
+  padding: 94px 0px;
+}
+
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 94px 0px;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -247,7 +251,7 @@ img {
 
 /*=== WHAT ARE WE DOING SECTION ===*/
 .service {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .service-list {
@@ -267,15 +271,11 @@ img {
 /*=== OUR TEAM SECTION ===*/
 .team {
   background-color: #f5f4fa;
-}
-
-.team .title {
-  padding-top: 94px;
+  padding: 94px 0px;
 }
 
 .team-list {
   display: flex;
-  padding-bottom: 94px;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -316,12 +316,7 @@ img {
 
 .footer {
   background-color: var(--backgrund-hero-footer);
-}
-
-.footer-content {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: left;
+  padding: 60px 0px;
 }
 
 .footer-list {
@@ -348,8 +343,8 @@ img {
 /*=== PORTFOLIO ===*/
 /*==== FILTERS LIST ====*/
 .filters-projects-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0px;
+  border: 1px solid #ececec;
 }
 
 .filters-list {
@@ -406,7 +401,7 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid #eeeeee;
 }
 
 .projects-list-content-wraper {
