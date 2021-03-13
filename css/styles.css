@@ -151,12 +151,24 @@ img {
   margin-left: auto;
 }
 
-.nav-link {
+.comunication-item .nav-link {
   font-weight: var(--font-weight-text);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color-title);
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .nav-link:hover,
@@ -172,7 +184,14 @@ img {
 
 /*=== HERO ===*/
 .hero {
-  background: var(--backgrund-hero-footer);
+  background-color: var(--backgrund-hero-footer);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-hero {
