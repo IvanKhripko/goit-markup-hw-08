@@ -395,9 +395,13 @@ img {
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0px 32px;
+  /*padding: 0px 32px;*/
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /*=== END OUR TEAM SECTION ===*/
