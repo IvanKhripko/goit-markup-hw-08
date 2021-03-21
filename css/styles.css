@@ -157,6 +157,8 @@ img {
   margin-right: 25px;
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel-link {
@@ -167,6 +169,8 @@ img {
   color: var(--text-color-site);
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-link:hover,
@@ -186,12 +190,12 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .link-studio {
@@ -258,6 +262,15 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin: 0 auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #2084d6;
+  animation-duration: 1000ms;
+  animation-iteration-count: 10;
 }
 /*=== END HERO ===*/
 
@@ -329,6 +342,24 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  position: relative;
+}
+
+.trend-overlay {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 27px 0px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 /*=== END WHAT ARE WE DOING SECTION ===*/
 
@@ -396,11 +427,13 @@ img {
   align-items: center;
   background-color: #fff;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--white-color-theme);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -444,6 +477,8 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customer-link:hover,
@@ -452,7 +487,7 @@ img {
   border-color: var(--accent-color);
 }
 
-/*=== REGULAR CUSTOMER SECTION ===*/
+/*=== END REGULAR CUSTOMER SECTION ===*/
 
 /*=== FOOTER SECTION ===*/
 
@@ -474,6 +509,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color-theme);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-adress:hover,
@@ -516,6 +553,7 @@ img {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-icon {
@@ -531,6 +569,7 @@ img {
 .footer-social-list-link:hover .footer-social-list-icon,
 .footer-social-list-link:focus .footer-social-list-icon {
   fill: var(--white-color-theme);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-link:hover,
@@ -568,14 +607,17 @@ img {
   border-radius: 4px;
   border: 1px solid transparent;
   padding: 6px 22px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color-theme);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 /*==== AND FILTERS LIST ====*/
 
 /*==== PROJECTS LIST ====*/
@@ -675,3 +717,31 @@ img {
 
 /*==== END PROJECTS LIST ====*/
 /*=== END PORTFOLIO ===*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  background-color: var(--white-color-theme);
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 8;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+}
