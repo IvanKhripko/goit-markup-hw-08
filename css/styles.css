@@ -754,3 +754,8 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+
+.icon-close-modal {
+  width: 11px;
+  height: 11px;
+}
