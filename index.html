@@ -424,27 +424,31 @@
             <form action="#" class="modal-form">
                 <label class="modal-form-field">
                     Имя
-                    <div class="modal-form-input-wraper">
+                    <span class="modal-form-input-wraper">
                         <input type="text" name="User-name" class="modal-form-input" required minlength="2">
-                        <svg class="modal-form-icon">
-                            <use href="./images/sprite-modal.svg#icon-name-form" width="12" height="12"></use>
+                        <svg class="modal-form-icon" width="12" height="12">
+                            <use href="./images/sprite-modal.svg#icon-name-form"></use>
                         </svg>
-                    </div>                    
+                    </span>                    
                 </label>
                 <label class="modal-form-field">
                     Телефон
-                    <input type="tel" name="user-phone" class="modal-form-input" required 
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11">
-                    <svg class="modal-form-icon">
-                        <use href="./images/sprite-modal.svg#icon-tel-form" width="13" height="13"></use>
-                    </svg>
+                    <span class="modal-form-input-wraper">
+                        <input type="tel" name="user-phone" class="modal-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            title="096-111-11-11">
+                        <svg class="modal-form-icon" width="13" height="13">
+                            <use href="./images/sprite-modal.svg#icon-tel-form"></use>
+                        </svg>
+                    </span>
                 </label>            
                 <label class="modal-form-field">
                     Почта
-                    <input type="text" name="user-mail" class="modal-form-input" title="nama@mail.com">
-                    <svg class="modal-form-icon">
-                        <use href="./images/sprite-modal.svg#icon-evelope-form" width="15" height="12"></use>
-                    </svg>
+                    <span class="modal-form-input-wraper">
+                        <input type="text" name="user-mail" class="modal-form-input" title="nama@mail.com">
+                        <svg class="modal-form-icon" width="15" height="12">
+                            <use href="./images/sprite-modal.svg#icon-evelope-form"></use>
+                        </svg>
+                    </span>
                 </label>            
                 <label class="modal-form-filed">
                     Сообщение
