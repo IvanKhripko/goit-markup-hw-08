@@ -775,13 +775,26 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.modal-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form-icon {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 12px;
   transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
 }
 
 .modal-form-input-wraper {
