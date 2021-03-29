@@ -405,23 +405,25 @@
             </div>
             <div class="footer-subscription"> 
                 <b class="footer-subscription-text">Подпишитесь на рассылку</b>
-                <form action="#" class="footer-subscription-form"></form>
-                    <div class="footer-subscription-container">                   
-                        <input class="footer-subscription-input" type="email" name="user-mail" title="@.com" placeholder="E-mail">
-                        <button type="submit" class="footer-btn">
+                <form action="#" class="footer-subscription-form">
+                    <div class="footer-subscription-container">                    
+                        <label>
+                            <input class="footer-subscription-input" type="mail" name="user-mail" title="@.com" placeholder="E-mail">
+                        </label>
+                        <button type="submit" class="footer-btn animate__pulse">
                             Подписаться
                             <svg class="icon-footer-btn" width="24" height="24">
                                 <use href="./images/sprite-footer.svg#icon-send"></use>
                             </svg>
-                        </button>
-                    </div>
-                </form>               
+                        </button>                    
+                    </div> 
+                </form>
             </div> 
         </div>
     </footer>
 
 
-    <!-- МОДАЛЬНОЕ ОКНО -->
+    <!--MODAL-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="btn-close-modal" data-modal-close>
@@ -460,8 +462,8 @@
                         </svg>
                     </span>
                 </label>            
-                <label class="modal-form-filed">
-                    Сообщение
+                <label class="modal-form-field">
+                    Комментарий
                     <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
                 <input type="checkbox" id="user-term" name="user-term" class="modal-form-term visualy-hidden">
