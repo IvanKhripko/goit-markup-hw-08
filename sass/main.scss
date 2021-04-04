@@ -1,3 +1,4 @@
+@import "./utils/mixins";
 @import "./utils/variables";
 @import "./utils/visualy-hidden";
 
@@ -10,15 +11,15 @@
 @import "./components/modal-form";
 @import "./components/btn";
 @import "./components/title";
-@import "./components/social-list-links";
+@import "./components/social-links";
 @import "./components/suptitle";
 
 @import "./layout/header";
 @import "./layout/hero";
-@import "./layout/choose-us";
+@import "./layout/advantages";
 @import "./layout/service";
 @import "./layout/team";
-@import "./layout/regular-customer";
+@import "./layout/customers";
 @import "./layout/footer";
 @import "./layout/filters";
 @import "./layout/projects";

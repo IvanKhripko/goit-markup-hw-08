@@ -9,11 +9,33 @@
   margin-bottom: 20px;
 }
 
-.modal-suptitle {
+.modal-container__suptitle {
+  display: block;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-title);
   margin-bottom: 12px;
+}
+
+.advantages-list__suptitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color-title);
+  margin-bottom: 10px;
+  width: 270px;
+}
+
+.team-list__suptitle {
+  font-weight: var(--font-weight-text);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color-title);
+  margin-bottom: 10px;
 }

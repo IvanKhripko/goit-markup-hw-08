@@ -4,3 +4,40 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.container__header {
+  display: flex;
+}
+
+.advantages-list__icon-container {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-address-container {
+  margin-right: 70px;
+}
+
+.footer-social-links-container {
+  margin-right: 93px;
+}
+
+.footer-subscription-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.modal-container {
+  padding: 40px;
+}

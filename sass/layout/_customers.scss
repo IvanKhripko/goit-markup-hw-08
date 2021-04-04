@@ -2,17 +2,17 @@
   padding: 94px 0px;
 }
 
-.regular-customers-list {
+.customers-list {
   display: flex;
 }
 
-.regular-customer-item {
+.customers-list__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.regular-customer-link {
+.customers-list__link {
   width: 170px;
   height: 90px;
   display: flex;

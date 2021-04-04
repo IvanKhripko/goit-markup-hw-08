@@ -4,17 +4,20 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  // margin-right: 93px;
 }
 
-.logo-first-part {
+.logo__accent {
   color: var(--accent-color);
 }
 
-.logo-white-theme {
+.logo_white-theme {
   color: var(--dark-color-theme);
+  margin-right: 93px;
 }
 
-.logo-dark-theme {
+.logo_dark-theme {
+  display: block;
   color: var(--white-color-theme);
+  margin-bottom: 20px;
 }

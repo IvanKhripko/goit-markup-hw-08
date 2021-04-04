@@ -15,31 +15,31 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <a class="logo link logo-white-theme" href=""><span class="logo-first-part">Web</span>Studio</a>
-            <nav class="nav">
-                <ul class="nav-list list">
-                    <li class="nav-item">
-                        <a class="link nav-link" href="index.html">Студия</a>
+        <div class="container container__header">
+            <a class="logo link logo_white-theme" href=""><span class="logo__accent">Web</span>Studio</a>
+            <nav class="navigation">
+                <ul class="navigation__list list">
+                    <li class="navigation__list-item">
+                        <a class="link navigation-list__link" href="index.html">Студия</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="link nav-link link-portfolio" href="portfolio.html">Портфолио</a>
+                    <li class="navigation__list-item">
+                        <a class="link navigation-list__link active-link" href="">Портфолио</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="link nav-link" href="">Контакты</a>
+                    <li class="navigation__list-item">
+                        <a class="link navigation-list__link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <ul class="list communication-list">
-                <li class="commuication-item">
-                    <a class="link mail-link" href="mailto:info@dewstudio.com">
-                        <svg class="icon-envelope" width="16" height="12">
+                <li class="communication-list__item">
+                    <a class="link communication-list__link" href="mailto:info@dewstudio.com">
+                        <svg class="communication-list__icon-envelope" width="16" height="12">
                             <use href="./images/sprite.svg#icon-envelope"></use>
                         </svg>info@dewstudio.com</a>
                 </li>
-                <li class="commuication-item">
-                    <a class="link tel-link" href="tel:+380961111111">
-                        <svg class="icon-phone" width="10" height="16">
+                <li class="communication-list__item">
+                    <a class="link communication-list__link" href="tel:+380961111111">
+                        <svg class="communication-list__icon-phone" width="10" height="16">
                             <use href="./images/sprite.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -48,9 +48,10 @@
     </header>
 
     <main class="content-portfolio">
+
         <!-- SECTION OF FILTERS AND PROJECTS -->
         <section class="filters-projects-section">
-            <h1 hidden>Фильтры и Проекты</h1>
+            <h1 class="visualy-hidden">Фильтры и Проекты</h1>
             <div class="container">
                 <ul class="list filters-list">
                     <li class="filters-item">
@@ -221,52 +222,52 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-container">
+        <div class="container container__footer">
             <div class="footer-address-container">
-                <a class="link logo logo-dark-theme" href=""><span class="logo-first-part">Web</span>Studio</a>
+                <a class="link logo logo_dark-theme" href=""><span class="logo__accent">Web</span>Studio</a>
                 <!--CONTACT INFORMATION-->
-                <address class="address">
-                    <ul class="list footer-list">
-                        <li class="footer-link-item">
-                            <a class="link link-adress" href="https://goo.gl/maps/hcSzEZoFeTUnPmFg6" target="_blank"
-                                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                <address class="footer-adress address">
+                    <ul class="list adress__list">
+                        <li class="adress-list__item">
+                            <a class="link adress-list__link-map" href="https://goo.gl/maps/hcSzEZoFeTUnPmFg6"
+                                target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="footer-link-item">
-                            <a class="link mail-link" href="mailto:info@dewstudio.com">info@dewstudio.com</a>
+                        <li class="adress-list__item">
+                            <a class="link adress-list__link" href="mailto:info@dewstudio.com">info@dewstudio.com</a>
                         </li>
-                        <li class="footer-link-item">
-                            <a class="link tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="adress-list__item">
+                            <a class="link adress-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-social-list-container">
+            <div class="footer-social-links-container">
                 <b class="footer-suptitle">Присоединяйтесь</b>
                 <ul class="footer-social-list list">
-                    <li class="footer-social-list-item">
-                        <a href="" class="footer-social-list-link link">
-                            <svg class="footer-social-list-icon" width="20" height="20">
+                    <li class="social-list__item">
+                        <a href="" class="footer-social-list__link link">
+                            <svg class="footer-social-list__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-social-list-item">
-                        <a href="" class="footer-social-list-link link">
-                            <svg class="footer-social-list-icon" width="20" height="20">
+                    <li class="social-list__item">
+                        <a href="" class="footer-social-list__link link">
+                            <svg class="footer-social-list__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-social-list-item">
-                        <a href="" class="footer-social-list-link link">
-                            <svg class="footer-social-list-icon" width="20" height="20">
+                    <li class="social-list__item">
+                        <a href="" class="footer-social-list__link link">
+                            <svg class="footer-social-list__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-social-list-item">
-                        <a href="" class="footer-social-list-link link">
-                            <svg class="footer-social-list-icon" width="20" height="20">
+                    <li class="social-list__item">
+                        <a href="" class="footer-social-list__link link">
+                            <svg class="footer-social-list__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -275,15 +276,15 @@
             </div>
             <div class="footer-subscription">
                 <b class="footer-suptitle">Подпишитесь на рассылку</b>
-                <form action="#" class="footer-subscription-form">
+                <form action="#" class="subscription-form">
                     <div class="footer-subscription-container">
                         <label>
-                            <input class="footer-subscription-input" type="email" name="user-mail" title="@.com"
+                            <input class="subscription-form__input" type="email" name="user-mail" title="@.com"
                                 placeholder="E-mail">
                         </label>
                         <button type="submit" class="footer-btn animate__pulse">
                             Подписаться
-                            <svg class="icon-footer-btn" width="24" height="24">
+                            <svg class="footer-btn-icon" width="24" height="24">
                                 <use href="./images/sprite-footer.svg#icon-send"></use>
                             </svg>
                         </button>
