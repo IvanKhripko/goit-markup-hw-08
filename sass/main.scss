@@ -4,7 +4,21 @@
 @import "./base/common";
 @import "./base/container";
 
-@import "./components/modal-btn";
+@import "./components/logo";
+@import "./components/bacckdrop";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/btn";
+@import "./components/title";
 @import "./components/social-list-links";
 @import "./components/suptitle";
-@import "./components/title";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/choose-us";
+@import "./layout/service";
+@import "./layout/team";
+@import "./layout/regular-customer";
+@import "./layout/footer";
+@import "./layout/filters";
+@import "./layout/projects";
