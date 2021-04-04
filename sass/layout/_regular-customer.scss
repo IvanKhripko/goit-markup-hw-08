@@ -6,8 +6,10 @@
   display: flex;
 }
 
-.regular-customer-item:not(:last-child) {
-  margin-right: 30px;
+.regular-customer-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .regular-customer-link {

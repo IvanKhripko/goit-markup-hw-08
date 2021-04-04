@@ -8,8 +8,10 @@
   margin-bottom: 50px;
 }
 
-.filters-item:not(:last-child) {
-  margin-right: 8px;
+.filters-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .filter-btn {

@@ -33,8 +33,10 @@
   align-items: center;
 }
 
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
+.social-list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer-social-list {
@@ -72,6 +74,8 @@
   }
 }
 
-.footer-social-list-item:not(:last-child) {
-  margin-right: 10px;
+.footer-social-list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
