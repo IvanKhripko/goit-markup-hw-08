@@ -10,3 +10,11 @@
   padding: 200px 0px;
   text-align: center;
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero__background {
+    background-image: url("./images/hero/background-mobile@2x.jpg");
+  }
+}
