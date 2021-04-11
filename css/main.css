@@ -593,7 +593,7 @@ img {
 
 .hero__background {
   background-color: var(--backgrund-hero-footer);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/background-desktop.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0px;
@@ -602,7 +602,7 @@ img {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__background {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/background-desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-desktop@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 200px 0px;
