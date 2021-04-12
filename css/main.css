@@ -578,7 +578,11 @@ img {
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ececec;
-    max-width: 1199px;
+  }
+  .communication-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
   }
 }
 
