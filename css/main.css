@@ -558,6 +558,7 @@ img {
   .mobile-menu__social-list {
     display: flex;
     margin-top: 64px;
+    margin-bottom: 48px;
     flex-wrap: wrap;
   }
   .mobile-menu__social-item {
