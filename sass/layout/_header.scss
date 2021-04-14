@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 50%;
     width: 100vw;
@@ -33,6 +34,10 @@
     margin-bottom: 32px;
   }
 
+  .mobile-menu__list {
+    margin-bottom: 306px;
+  }
+
   .mobile-menu__link {
     @include font(40px, 500, 47px, 0.02em);
     color: #212121;
@@ -50,13 +55,16 @@
   }
 
   .mobile-menu__communication-link_mail {
-    max-width: 320px;
+    display: block;
+    margin-top: 32px;
     @include font(24px, 500, 28px, 0.02em);
     color: var(--text-color-site);
   }
 
   .mobile-menu__social-list {
     display: flex;
+    margin-top: 64px;
+    flex-wrap: wrap;
   }
 
   .mobile-menu__social-item {
