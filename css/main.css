@@ -376,16 +376,18 @@ img {
   margin-bottom: 50px;
 }
 
-.hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color-theme);
-  width: 696px;
-  margin: 0 auto 30px;
+@media screen and (max-width: 767px) {
+  .hero__title {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color-theme);
+    margin: 0 auto 30px;
+    padding: 0 45px;
+  }
 }
 
 .social-list,
@@ -707,21 +709,16 @@ img {
   border-radius: 2px;
 }
 
-.hero__background {
-  background-color: var(--backgrund-hero-footer);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 200px 0px;
-  text-align: center;
+.hero {
+  padding: 118px 0px;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) {
   .hero__background {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-desktop@2x.jpg");
+    background-color: var(--backgrund-hero-footer);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/background-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px 0px;
     text-align: center;
   }
 }

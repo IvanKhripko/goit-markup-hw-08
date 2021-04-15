@@ -99,12 +99,12 @@
 
     <main>
         <!-- HERO -->
-        <!-- <section class="hero hero__background">
+        <section class="hero hero__background">
             <div class="container">
                 <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 <button type="button" class="modal-btn text-btn animate__pulse" data-modal-open>Заказать услугу</button>
             </div>    
-        </section> -->
+        </section> 
         
         <!-- ADVANTAGES -->
         <!-- <section class="advantages">
@@ -161,22 +161,45 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="list service-list">
                     <li class="service-list__item">
-                        <img class="service-list__img" src="./images/what_are_we_doing/normal-version/desktop-development.jpg" alt="Разработка сайтов" width="370"
-                            height="266">
+                        <picture>
+                            <source
+                                srcset="./images/what_are_we_doing/normal-version/desktop-development.webp 1x, ./images/what_are_we_doing/retina-version/desktop-development@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/what_are_we_doing/normal-version/desktop-development.jpg 1x, ./images/what_are_we_doing/retina-version/desktop-development@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img class="service-list__img" src="./images/what_are_we_doing/normal-version/desktop-development.jpg"
+                                alt="Разработка сайтов" width="370" height="266">
+                        </picture>
                         <p class="service-list__overlay-variety">
                             десктопные приложения
                         </p>
                     </li>
                     <li class="service-list__item">
-                        <img class="service-list__img" src="./images/what_are_we_doing/normal-version/mobile-development.jpg" alt="Разработка дизайна" width="370"
-                            height="266">
+                        <picture>
+                            <source
+                                srcset="./images/what_are_we_doing/normal-version/mobile-development.webp 1x, ./images/what_are_we_doing/retina-version/mobile-development@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source
+                                srcset="./images/what_are_we_doing/normal-version/mobile-development.jpg 1x, ./images/what_are_we_doing/retina-version/mobile-development@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img class="service-list__img" src="./images/what_are_we_doing/normal-version/mobile-development.jpg"
+                                    alt="Разработка дизайна" width="370" height="266">
+                        </picture>                       
                         <p class="service-list__overlay-variety">
                             мобильные приложения
                         </p>
                     </li>
                     <li class="service-list__item">
-                        <img class="service-list__img" src="./images/what_are_we_doing/normal-version/design-solution.jpg" alt="Разработка приложений" width="370"
-                            height="266">
+                        <picture>
+                            <source
+                                srcset="./images/what_are_we_doing/normal-version/design-solution.webp 1x, ./images/what_are_we_doing/retina-version/design-solution@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source
+                                srcset="./images/what_are_we_doing/normal-version/design-solution.jpg 1x, ./images/what_are_we_doing/retina-version/design-solution@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img class="service-list__img" src="./images/what_are_we_doing/normal-version/design-solution.jpg"
+                                    alt="Разработка приложений" width="370" height="266">
+                        </picture>
                         <p class="service-list__overlay-variety">
                             дизайнерские решения
                         </p>
