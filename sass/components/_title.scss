@@ -11,12 +11,17 @@
 
 @media screen and (max-width: 767px) {
   .hero__title {
-    @include font(26px, 900, 42px, 0.06em);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    color: var(--secondary-accent-text-color);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
     color: var(--white-color-theme);
-    margin: 0 auto 30px;
-    padding: 0 45px;
   }
 }
 // .hero__title {

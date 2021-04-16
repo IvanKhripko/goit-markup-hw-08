@@ -378,15 +378,17 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero__title {
-    font-size: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    color: var(--secondary-accent-text-color);
     font-weight: 900;
+    font-size: 26px;
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
     color: var(--white-color-theme);
-    margin: 0 auto 30px;
-    padding: 0 45px;
   }
 }
 
@@ -716,7 +718,17 @@ img {
 @media screen and (max-width: 768px) {
   .hero__background {
     background-color: var(--backgrund-hero-footer);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/background-mobile.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__background {
+    background-color: var(--backgrund-hero-footer);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-tablet .jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
