@@ -8,7 +8,7 @@
 }
 
 .footer-address-container {
-  text-align: center;
+  text-align: -webkit-center;
 }
 
 .adress-list__link-map {
@@ -32,7 +32,7 @@
   letter-spacing: 0.02em;
   color: var(--text-color-site);
   // display: flex;
-  align-items: center;
+  // align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
