@@ -10,16 +10,20 @@
 }
 
 .modal-container__suptitle {
-  display: block;
+  display: flex;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.03em;
   color: var(--text-color-title);
   margin-bottom: 12px;
 }
 
 .advantages-list__suptitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -30,6 +34,12 @@
   width: 270px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-list__suptitle {
+    display: block;
+  }
+}
+
 .team-list__suptitle {
   font-weight: var(--font-weight-text);
   font-size: 16px;
@@ -38,4 +48,10 @@
   letter-spacing: 0.03em;
   color: var(--text-color-title);
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__suptitle {
+    margin-bottom: 10px;
+  }
 }

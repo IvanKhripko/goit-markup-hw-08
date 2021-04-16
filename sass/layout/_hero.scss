@@ -36,22 +36,23 @@
       url("../images/hero/background-tablet\ .jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    padding: 200px 0px;
   }
 }
 
-// .hero__background {
-//   background-color: var(--backgrund-hero-footer);
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url("../images/hero/background-desktop.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   padding: 200px 0px;
-//   text-align: center;
-// }
+@media screen and (min-width: 1200px) {
+  .hero__background {
+    background-color: var(--backgrund-hero-footer);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px;
+  }
+}
 
 // @media (min-device-pixel-ratio: 2),
 //   (min-resolution: 192dpi),

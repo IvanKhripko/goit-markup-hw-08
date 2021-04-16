@@ -378,17 +378,49 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero__title {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
     margin-left: auto;
     margin-right: auto;
     max-width: 360px;
-    color: var(--secondary-accent-text-color);
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
     color: var(--white-color-theme);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color-theme);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color-theme);
+    margin-bottom: 30px;
   }
 }
 
@@ -471,16 +503,20 @@ img {
 }
 
 .modal-container__suptitle {
-  display: block;
+  display: flex;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.03em;
   color: var(--text-color-title);
   margin-bottom: 12px;
 }
 
 .advantages-list__suptitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -491,6 +527,12 @@ img {
   width: 270px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-list__suptitle {
+    display: block;
+  }
+}
+
 .team-list__suptitle {
   font-weight: var(--font-weight-text);
   font-size: 16px;
@@ -499,6 +541,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color-title);
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__suptitle {
+    margin-bottom: 10px;
+  }
 }
 
 .header {
@@ -731,7 +779,17 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-tablet .jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
+    padding: 200px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__background {
+    background-color: var(--backgrund-hero-footer);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0px;
   }
 }
 
@@ -739,17 +797,47 @@ img {
   padding: 94px 0px;
 }
 
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    margin-left: -30px;
+    margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .adventages-list__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .adventages-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adventages-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.advantages-list__icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  max-width: 450px;
+  height: 120px;
 }
 
 .advantages-list__icon {
@@ -810,18 +898,38 @@ img {
   padding: 94px 0px;
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 768px) {
+  .team-list {
+    margin-left: -30px;
+    margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .team-list__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .team-list__content-wraper {
@@ -849,23 +957,95 @@ img {
 
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.customers-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 480px) {
+  .customers-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers-list {
+    margin-left: -30px;
+    margin-top: -30px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list {
+    flex-wrap: nowrap;
+    margin-left: 0;
+  }
+}
+
+.customers-list__item {
+  height: 90px;
+}
+
+@media screen and (max-width: 480px) {
+  .customers-list__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list__item {
+    flex-basis: calc(100% / 3 - 30px);
+    max-width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list__item {
+    max-width: 170px;
+    margin-left: 0;
+  }
+  .customers-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .customers-list__link {
-  width: 170px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .customers-list__link {
+    max-width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list__link {
+    max-width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list__link {
+    max-width: 170px;
+  }
 }
 
 .customers-list__link:hover, .customers-list__link:focus {
