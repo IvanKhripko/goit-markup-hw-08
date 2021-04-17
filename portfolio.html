@@ -20,10 +20,10 @@
             <nav class="navigation">
                 <ul class="navigation__list list">
                     <li class="navigation__list-item">
-                        <a class="link navigation-list__link" href="index.html">Студия</a>
+                        <a class="link navigation-list__link" href="./index.html">Студия</a>
                     </li>
                     <li class="navigation__list-item">
-                        <a class="link navigation-list__link active-link" href="">Портфолио</a>
+                        <a class="link navigation-list__link active-link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="navigation__list-item">
                         <a class="link navigation-list__link" href="">Контакты</a>
@@ -44,6 +44,56 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="19" height="19">
+                    <use href="./images/sprite-modal.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav class="mobile-menu__navigation">
+                <ul class="mobile-menu__list list">
+                    <li class="mobile-menu__item">
+                        <a href="./index.html" class="mobile-menu__link link">Студия</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="./portfolio.html" class="mobile-menu__link link mobile-menu__aktive-link">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__communication-link_container">
+                <ul class="list mobile-menu__communication-list">
+                    <li class="mobile-menu_communication-item">
+                        <a class="link mobile-menu__communication-link_phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__communication-item">
+                        <a class="link mobile-menu__communication-link_mail"
+                            href="mailto:info@dewstudio.com">info@dewstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social-list list">
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="mobile-menu__social-link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="mobile-menu__social-link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="mobile-menu__social-link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-item">
+                        <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -69,8 +119,10 @@
                     <li class="filters-item">
                         <button class="filter-btn" type="button">Маркетинг</button>
                     </li>
-                </ul>
-                
+                </ul> 
+            </div>
+            
+            <!-- <div class="container">
                 <ul class="list projects-list">
                     <li class="projects-item">
                         <a href="" class="link name-project-link">
@@ -217,7 +269,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </section>
     </main>
 
@@ -294,6 +346,7 @@
         </div>
     </footer>
 
+    <script src="./js/modal-menu.js"></script>
 
 </body>
 </html>
