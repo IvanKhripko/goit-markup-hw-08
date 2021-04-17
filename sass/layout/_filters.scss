@@ -1,11 +1,10 @@
 .filters-projects-section {
-  padding: 94px 0px;
+  padding: 60px 0px 40px;
 }
 
 .filters-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .filters-item {
@@ -14,3 +13,34 @@
   }
 }
 
+.conteiner__filters {
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .filters-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner__filters {
+    padding-bottom: 0;
+  }
+
+  .filters-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner__filters {
+    padding-bottom: 50px;
+  }
+
+  .filters-projects-section {
+    padding: 94px 0px;
+  }
+}

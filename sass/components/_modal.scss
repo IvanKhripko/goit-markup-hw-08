@@ -3,9 +3,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
+  width: 450px;
+  height: 609px;
+  padding: 40px 40px;
   background-color: var(--white-color-theme);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 580px;
+  }
 }
 
 .btn-close-modal {

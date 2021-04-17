@@ -36,6 +36,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .advantages-text__ccontainer {
+    text-align: center;
+  }
+}
+
 .advantages-list__icon-container {
   display: flex;
   align-items: center;
