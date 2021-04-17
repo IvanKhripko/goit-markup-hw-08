@@ -40,14 +40,18 @@
   margin-bottom: 8px;
 }
 
-.footer-social-links-container {
-  text-align: center;
-  margin-top: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-social-links-container {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
-.footer-subscription {
-  text-align: center;
-  margin-top: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-subscription {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 .subscription-form__input {

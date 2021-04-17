@@ -628,9 +628,6 @@ img {
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  .mobile-menu__list {
-    margin-bottom: 306px;
-  }
   .mobile-menu__link {
     font-size: 40px;
     font-weight: 500;
@@ -774,8 +771,7 @@ img {
     justify-content: space-between;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  :hover,
-  :focus {
+  .communication-list__link:hover, .communication-list__link:focus {
     color: var(--accent-color);
   }
   .communication-list__item:not(:last-child) {
@@ -867,10 +863,6 @@ img {
   }
 }
 
-.adventages-list__item {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .adventages-list__item {
     flex-basis: calc(100% / 2 - 30px);
@@ -888,6 +880,9 @@ img {
 @media screen and (max-width: 767px) {
   .advantages-text__ccontainer {
     text-align: center;
+  }
+  .adventages-list__item {
+    margin-bottom: 30px;
   }
 }
 
@@ -975,8 +970,8 @@ img {
 }
 
 .team-list__item {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 768px) {
@@ -1001,7 +996,6 @@ img {
   border: 1px solid #fff;
   border-top: none;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list__position {
@@ -1152,14 +1146,18 @@ img {
   margin-bottom: 8px;
 }
 
-.footer-social-links-container {
-  text-align: center;
-  margin-top: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-social-links-container {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
-.footer-subscription {
-  text-align: center;
-  margin-top: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-subscription {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 .subscription-form__input {
@@ -1233,7 +1231,7 @@ img {
 }
 
 .conteiner__filters {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1254,7 +1252,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .conteiner__filters {
+  .filters-list {
     padding-bottom: 50px;
   }
   .filters-projects-section {
