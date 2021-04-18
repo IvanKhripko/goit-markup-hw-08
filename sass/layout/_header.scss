@@ -40,11 +40,11 @@
     @include font(40px, 500, 47px, 0.02em);
     color: #212121;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 
   .mobile-menu__aktive-link {
