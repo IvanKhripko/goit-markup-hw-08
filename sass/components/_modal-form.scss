@@ -105,3 +105,9 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .modal-form__check-desc {
+    @include font(14px, 400, 42px, 0.03em);
+  }
+}
